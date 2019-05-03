@@ -16,9 +16,41 @@ body {
 }
 
 h1 {
-    padding: 25px 0 0 0;
+    padding: 0;
+    margin: 0 auto 15px auto;
     text-align: center;
     color: rgb(35, 20, 85);
+}
+
+.icon-head {
+    padding: 25px 0 0 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(35, 20, 85);
+    list-style: none;
+    font-size: 50px;
+    
+}
+
+.description li::before {
+    content: "\2022";
+    color: #40E0D0;
+    font-size: 1em;
+    padding-right: 2px;
+}
+
+.description {
+    border-left: 1px solid rgb(10, 53, 119);
+    height: 100%;
+    
+}
+
+.description li {
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-left: 10px;
 }
 
 /*****************
@@ -29,7 +61,9 @@ header {
     /*rgba(78, 131, 161, 0.9), */
     /* background-image: linear-gradient(rgba(5, 9, 252, 0.795), rgba(78, 130, 161, 0.664)), url('img/iso-republic-keyboard-notepad-iphone-flat-lay.jpg'); */
     /* background-image: linear-gradient(rgba(5, 9, 252, 0.795), rgba(78, 130, 161, 0.664)), url('img/background-image.jpg');     */
-    background-image: linear-gradient(rgba(5, 9, 252, 0.726), rgba(78, 130, 161, 0.507)), url('img/alex-knight-192782-unsplash.jpg');        
+    /* background-image: linear-gradient(rgba(54, 214, 219, 0.726), rgba(78, 130, 161, 0.507)), url('img/alex-knight-192782-unsplash.jpg');         */
+    background-image: linear-gradient(rgba(29, 210, 216,0.4), rgba(18, 235, 233,0.4)), url('img/alex-knight-192782-unsplash.jpg');            
+    /* background-image: linear-gradient(rgba(0, 0, 0,0.9), rgba(0, 0, 0,0.5)), url('img/alex-knight-192782-unsplash.jpg');                 */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -61,7 +95,7 @@ h3 {
     */height: 100px;
     width: 100px;
     border-radius: 50%;
-    top: 25%;
+    top: 20%;
     left: 58%;
     /* transform: translate(-50%, -50%); */
     /* -webkit-transform: translate(-50%, -50%);
@@ -87,6 +121,13 @@ h3 {
     -ms-transform: translate(-90%, -50%);
     -o-transform: translate(-90%, -50%); */
     display: block;
+    float: left;
+}
+
+.main-head i {
+    color: #fff;
+    float: left;
+    margin-right: 10px;
 }
 
 .row {
@@ -124,7 +165,7 @@ h3 {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 3px solid rgb(114, 217, 243); 
+    border-bottom: 3px solid  #40E0D0; 
 }
 
 /*****************
@@ -134,6 +175,8 @@ h3 {
 #section-education {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 40px;
+    margin-top: 30px;
 }
 
 /* #section-education h1 {
@@ -146,21 +189,24 @@ h3 {
     margin-left: 5px;
 }
 
+
+
 .date {
     margin: 0;
     text-align: right;
-    padding: 0 8px;
-    border-right: 1px solid rgb(8, 81, 177);
-    height: 150px;
+    padding: 10px 8px;
+    /* border-right: 1px solid rgb(8, 81, 177);
+    height: 100%; */
 }
 
 .date h2 {
     font-weight: 400;
-    margin: 0;
+    /* margin-top: -2px; */
     font-weight: 300;
     text-transform: uppercase;
     color: rgb(10, 53, 119);
     margin: 0;
+    padding: 0;
     font-size: 145%;
     word-spacing: 3px;
     letter-spacing: 1px;
@@ -169,6 +215,8 @@ h3 {
 }
 
 .education-area {
+    border-left: 1px solid rgb(10, 53, 119);
+    height: 100%;
     padding: 0 10px;
     list-style: none;
 }
@@ -181,38 +229,267 @@ h3 {
 ** SKILLS **
 *****************/
 
-.skill:link,
-.skill:visited {
-    color: rgb(18, 30, 139);
-    font-size: 400;
-    text-decoration: none;
-    background-color: rgb(245, 245, 245);
-    padding: 5px 5px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    transition: background-color 0.2s;
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    -ms-transition: background-color 0.2s;
-    -o-transition: background-color 0.2s;
+#section-skills {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.582), rgba(15, 58, 94, 0.7)), url('img/skill_back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 40px;
+    margin-top: 30px;
 }
 
-.skill:hover,
-.skill:active {
-    background-color: rgb(61, 216, 190);
+.skill-box {
+    /* background-color: rgb(19, 18, 65); */
+    border: 1px solid transparent;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 7px    ;
+    -webkit-border-radius: 7px    ;
+    -moz-border-radius: 7px    ;
+    -ms-border-radius: 7px    ;
+    -o-border-radius: 7px    ;
 }
+
+.skill-box div {
+    padding: 10px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.349);
+}
+
+.skill-box div:first-child {
+    text-align: center;
+}
+
+.skill-box div:last-child {
+    border: 0;
+}
+
+.skill-box h2 {
+    color: #40E0D0;
+}
+
+.skill-box ul {
+    list-style: none;
+    font-size: 100%;
+    font-weight: 400;
+    color: #fff;
+}
+
+.skill-box li {
+    padding-bottom: 2px;
+}
+
+.skill-box i {
+    font-size: 20px;
+    padding-right: 5px;
+    color: #40E0D0;
+}
+
+
 
 /*****************
 ** EXPERIENCE **
 *****************/
 
+#section-experience {
+    width: 100%;
+    padding-bottom: 40px; 
+    margin-top: 30px;   
+}
+
+.date li {
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 400;
+    list-style: none;
+}
+
+/* .experience-description {
+    padding-left: 10px;
+} */
+
+
+
 /*****************
 ** PROJECTS **
 *****************/
 
+#section-projects {
+    padding-bottom: 40px;
+    margin-top: 30px;
+    background-image: url("img/background-image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+.project {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    padding: 0 40px;
+}
+
+.project h1 {
+    text-align: left;
+    color: teal;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.project-img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.stack {
+    opacity: 0;
+    position: absolute;
+	top: 1%;
+	left: 7.5%;
+	right: 0;
+	bottom: 0;
+	width: 81%;
+	height: 77%;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.project:hover .stack,
+.project.active .stack {
+	opacity: 1;
+}
+
+.project span{
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-80%, -90%);
+    -webkit-transform: translate(-80%, -90%);
+    -moz-transform: translate(-80%, -90%);
+    -ms-transform: translate(-80%, -90%);
+    -o-transform: translate(-80%, -90%);
+}
+
+.project span i {
+    color: teal;
+}
+
+.stack li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.bill {
+    width: 95%;
+    height: 215px;
+}
+
 /*****************
 ** CO-CURRICULAR **
 *****************/
+
+#section-training {
+    width: 100%;
+    padding-bottom: 40px;
+    margin-top: 30px;
+}
+
+#section-training h2 {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/*****************
+** FOOTER **
+*****************/
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(87, 233, 233);
+    padding: 50px;
+    font-size: 80%;
+    font-weight: 400;
+    color: rgb(46, 50, 99);
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.message {
+    font-size: 150%;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+
+}
+
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    /* color: rgb(136, 131, 131); */
+    color: rgb(46, 50, 99);
+    text-decoration: none;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.social-links li a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin-top: 4px;
+    font-size: 90%;
+    color: rgb(46, 50, 99);
+    text-align: center;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-instagram,
+.ion-logo-googleplus {
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 140%;
+}
+
+.ion-logo-linkedin:hover {
+    color: #007bb6;
+}
+
+.ion-logo-github:hover {
+    color: #000;
+}
