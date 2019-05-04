@@ -1,0 +1,125 @@
+
+/* Full screen to Big Tablets:1200 px*/
+@media only screen and (max-width: 1160px) {
+    .main-img img{
+        /* position: absolute; */
+        height: 80px;
+        width: 90px;   
+        top: 25%; 
+        left: 60%;
+    }
+    .main-nav { padding-right: 20px; }
+    .phone { padding-left: 41%; }
+    .skill-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .main-head { font-size: 17px; }
+    .main-nav { margin-top: 16px; }
+    .main-img img {
+        height: 75px;
+        width: 85px;
+        left: 62%;
+    }
+    .stack li {
+        font-size: 70%;
+        margin-top: 0;
+    }
+    .stack { width: 79%; }
+    .project h1 { font-size: 30px; }
+    .phone { padding-left: 41%; }
+    .skill-box {
+        width: 100%;
+        margin: 0;
+        font-size: 90%;
+    }
+    .project-img { height: 185px; }
+    .stack {
+        width: 78%;
+        height: 78%;
+    }
+
+}
+
+@media only screen and (max-width: 777px) {
+
+    .main-nav li { margin-left: 5px; }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        font-size: 14px;
+        border-bottom: 2px solid transparent;
+    }
+    .main-nav li a:hover,
+    .main-nav li a:active { border-bottom: 2px solid  #40E0D0;  }
+    .main-head {
+        top: 25%;
+        left: 32%;
+        width: 40%;
+    }
+    .main-head h2 { font-size: 120%; }
+    .main-head h3 { font-size: 90%; }
+    
+    .main-img img {
+        height: 8%;
+        width: 8%;
+        left: 63%;
+        top: 26%;
+    }
+
+    .stack {
+        width: 69%;
+        height: 78.5%;
+        left: 13%;
+        font-size: 85%;
+    }
+    .project h1 { font-size: 120%; }
+    .skill-box {
+        width: 100%;
+        margin: 0;
+        font-size: 70%;
+    }
+    .email { padding-left: 40%; }
+    .phone { padding-left: 40%; }
+}
+
+@media only screen and (max-width: 620px) {
+    .skill-box {
+        width: 100%;
+        margin: 0;
+    }
+    .skill-box h2 {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .main-nav { display: none; }
+    .main-head {
+        left: 26%;
+        top: 28%;
+        font-size: 15px;
+        width: 45%;
+    }
+    .date { text-align: left; }
+    .education-area { border: 0; }
+    .description { border: 0; }
+    .skill-box {
+        width: 80%;
+        text-align: justify;
+    }
+    .stack {
+        width: 77%;
+        height: 80%;   
+        left: 9%;
+        top: 0;
+        font-size: 100%;
+    }
+    .project h1 { background-color: rgba(255, 255, 255, 0.651); }
+}

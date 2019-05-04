@@ -3,7 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">        
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
 
@@ -36,12 +38,12 @@
             </div>
         </header>
 
-        <section id="section-education">
+        <section class="js--section-education" id="section-education">
             <div class="row">
                 <li class="icon-head"><i class="icon ion-ios-school"></i></li>
                 <h1>Education</h1>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-2 date">
                     <h2>2016-2020</h2>
                 </div>
@@ -53,7 +55,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-2 date">
                     <h2>2015-2016</h2>
                 </div>
@@ -65,7 +67,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-2 date">
                     <h2>2013-2014</h2>
                 </div>
@@ -88,7 +90,7 @@
                 <div class="col span-1-of-3">
                     <div class="skill-box">
                         <div>
-                            <h2>Software</h2>
+                            <h2 class="js--wp-2">Software</h2>
                         </div>
                         <div>
                             <ul>
@@ -103,7 +105,7 @@
                 <div class="col span-1-of-3">
                     <div class="skill-box">
                         <div>
-                            <h2>Database</h2>
+                            <h2 class="js--wp-2">Database</h2>
                         </div>
                         <div>
                             <ul>
@@ -117,7 +119,7 @@
                 <div class="col span-1-of-3">
                     <div class="skill-box">
                         <div>
-                            <h2>Web Engineering</h2>
+                            <h2 class="js--wp-2">Web Engineering</h2>
                         </div>
                         <div>
                             <ul>
@@ -169,7 +171,7 @@
                 <h1>Projects</h1>
             </div>
             <div class="row">
-                <div class="col span-1-of-2 project">
+                <div class="col span-1-of-2 project js--wp-3">
                     <img class="project-img" src="resources/img/2048_game.jpg" alt="game 2048">
                     <h1>Game 2048 </h1>
                     <span><a href="https://github.com/ishween/2048-game"><i class="icon ion-md-open"></i></a>
@@ -184,7 +186,7 @@
                         </ul>
                     </div>
                 </div> 
-                <div class="col span-1-of-2 project">
+                <div class="col span-1-of-2 project js--wp-3">
                     <img class="project-img bill" src="resources/img/bill.jpg" alt="bill">
                     <h1>Bill Reimbursement</h1>
                     <span><a href="https://github.com/ishween/Bill-Reimbursement"><i class="icon ion-md-open"></i></a>
@@ -254,15 +256,15 @@
                     <div class="col span-1-of-2">
                         <ul class="footer-nav">
                             <li class="message"><strong>I'd love to hear<br> from you : </strong></li>
-                            <li>ishween1999@gmail.com</li>
-                            <li>+91-9540305678</li>
+                            <li class="email">ishween1999@gmail.com</li>
+                            <li class="phone">+91-9540305678</li>
                         </ul>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-2">
                             <ul class="social-links">
-                            <li><a href="#"><i class="icon ion-logo-github"></i></a></li>
-                            <li><a href="#"><i class="icon ion-logo-linkedin"></i></a></li>
+                            <li><a href="https://github.com/ishween"><i class="icon ion-logo-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/ishweenkaur/"><i class="icon ion-logo-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -272,6 +274,12 @@
                 </div>
             </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 
 </html>
